@@ -19,14 +19,8 @@ int main()
 
 
 	while(!Autorisation(size, pass, logins));
-	{
-	}
-
-
-
-
-
-
+	
+	
 
 	return 0;
 }
@@ -61,7 +55,7 @@ bool PasswordCheck(int size, std::string pass[], int index)
 }
 
 
-bool Autorisation(int size, std::string pass[], std::string logins[]) {
+bool Authorisation(int size, std::string pass[], std::string logins[]) {
 	if (PasswordCheck(size, pass, (LoginCheck(size, logins))) == true)
 	{
 		return true;
